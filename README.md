@@ -11,18 +11,24 @@ Sun editor and rehype should be easy to cut out, they are only used in one place
 
 
 ### Installation
-npm install
+```npm install```
 
 ### Local Development
-npm start
+```npm start```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server, runs on localhost:3000
 
 ### PDF Generation
 see /pdfgen folder for a sample command, the PDF generator runs offline but requires the application to be running (it scrapes the content from the live site via GET requests). An example PDF has been left in that folder as well.
 
+### Versioning the repo
+command to add a new version:
+```npm run docusaurus docs:version xxx```
+this will update the entire "docs" tree, cloning it into a new version
+Docusaurus versioning is explained [here](https://docusaurus.io/docs/versioning)
+
 ### Build
-npm run build
+```npm run build```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
